@@ -104,19 +104,15 @@ class TransformationFrontend extends Actor with SprayActorLogging {
     )
   )
 
-  case class Message(val msg: String)
+
+  context.actorOf(Props[TransformationBackend], name = "backend")
 
   def receive = {
 
     case _: Http.Connected => sender ! Http.Register(self)
 
     case HttpRequest(GET, Uri.Path("/"), _, _, _) =>
-      if (backends.isEmpty) {
-        sender ! noWorkers
-      } else {
-        sender ! index(backends.size)
-      }
-
+      sender ! index(backends.size)
     case HttpRequest(GET, Uri.Path("/work"), _, _, _) =>
       jobCounter += 1
       
