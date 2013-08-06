@@ -1,0 +1,14 @@
+run-main TransformationFrontend 2551
+run-main main.TransformationFrontend 2551
+run-main TransformationFrontend 2551
+run
+run-main TransformationBackend 2552
+run-main TransformationFrontend 2551
+run-main main.scala.TransformationFrontend 2551
+run-main main.TransformationFrontend 2551
+run-main main.TransformationBackend 2552
+run-main main.TransformationBackend
+run-main main.TransformationFrontend
+exit
+run-main main.TransformationFrontend 2551
+run-main main.TransformationBackend 2552
