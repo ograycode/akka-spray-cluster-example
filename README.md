@@ -7,3 +7,4 @@ Run with:
 * ```sbt 'run-main main.TransformationFrontend 2551'```
 * ```sbt 'run-main main.TransformationBackend 2552'```
 * add new backend with ```sbt 'run-main main.TransformationBackend'```
+* start console with sbt 'atmos:run'
