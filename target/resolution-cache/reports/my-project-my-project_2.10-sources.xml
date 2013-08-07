@@ -6,8 +6,8 @@
 		module="my-project_2.10"
 		revision="1.0"
 		conf="sources"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130805205152"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, atmos-dev, atmos-console, atmos-trace-compile, atmos-weave, atmos-sigar"
+		date="20130807192145"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

@@ -6,28 +6,28 @@
 		module="my-project_2.10"
 		revision="1.0"
 		conf="test-internal"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom"
-		date="20130805205152"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, atmos-dev, atmos-console, atmos-trace-compile, atmos-weave, atmos-sigar"
+		date="20130807192145"/>
 	<dependencies>
 		<module organisation="io.spray" name="spray-can">
-			<revision name="1.2-20130710" status="release" pubdate="20130709201336" resolver="spray repo" artresolver="spray repo" homepage="http://spray.io" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+			<revision name="1.2-20130710" status="release" pubdate="20130709201336" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2591" time="476" location="/home/gojira/.ivy2/cache/io.spray/spray-can/ivy-1.2-20130710.xml" searched="true" original-local-location="/home/gojira/.ivy2/cache/io.spray/spray-can/ivy-1.2-20130710.xml.original" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom"/>
+				<metadata-artifact status="no" details="" size="3380" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-can/ivy-1.2-20130710.xml" searched="false" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom"/>
 				<caller organisation="my-project" name="my-project_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.2-20130710" rev-constraint-default="1.2-20130710" rev-constraint-dynamic="1.2-20130710" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="spray-can" type="jar" ext="jar" status="successful" details="" size="533832" time="1529" location="/home/gojira/.ivy2/cache/io.spray/spray-can/jars/spray-can-1.2-20130710.jar">
+					<artifact name="spray-can" type="jar" ext="jar" status="no" details="" size="533832" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-can/jars/spray-can-1.2-20130710.jar">
 						<origin-location is-local="false" location="http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.spray" name="spray-http">
-			<revision name="1.2-20130710" status="release" pubdate="20130709201344" resolver="spray repo" artresolver="spray repo" homepage="http://spray.io" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
+			<revision name="1.2-20130710" status="release" pubdate="20130709201344" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="14">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1819" time="456" location="/home/gojira/.ivy2/cache/io.spray/spray-http/ivy-1.2-20130710.xml" searched="true" original-local-location="/home/gojira/.ivy2/cache/io.spray/spray-http/ivy-1.2-20130710.xml.original" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom"/>
+				<metadata-artifact status="no" details="" size="2843" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-http/ivy-1.2-20130710.xml" searched="false" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom"/>
 				<caller organisation="io.spray" name="spray-can" conf="default, compile, runtime, master" rev="1.2-20130710" rev-constraint-default="1.2-20130710" rev-constraint-dynamic="1.2-20130710" callerrev="1.2-20130710"/>
 				<artifacts>
-					<artifact name="spray-http" type="jar" ext="jar" status="successful" details="" size="1036691" time="876" location="/home/gojira/.ivy2/cache/io.spray/spray-http/jars/spray-http-1.2-20130710.jar">
+					<artifact name="spray-http" type="jar" ext="jar" status="no" details="" size="1036691" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-http/jars/spray-http-1.2-20130710.jar">
 						<origin-location is-local="false" location="http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar"/>
 					</artifact>
 				</artifacts>
@@ -58,25 +58,25 @@
 			</revision>
 		</module>
 		<module organisation="io.spray" name="spray-io">
-			<revision name="1.2-20130710" status="release" pubdate="20130709201332" resolver="spray repo" artresolver="spray repo" homepage="http://spray.io" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
+			<revision name="1.2-20130710" status="release" pubdate="20130709201332" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="12">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2037" time="452" location="/home/gojira/.ivy2/cache/io.spray/spray-io/ivy-1.2-20130710.xml" searched="true" original-local-location="/home/gojira/.ivy2/cache/io.spray/spray-io/ivy-1.2-20130710.xml.original" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom"/>
+				<metadata-artifact status="no" details="" size="3015" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-io/ivy-1.2-20130710.xml" searched="false" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom"/>
 				<caller organisation="io.spray" name="spray-can" conf="default, compile, runtime, master" rev="1.2-20130710" rev-constraint-default="1.2-20130710" rev-constraint-dynamic="1.2-20130710" callerrev="1.2-20130710"/>
 				<artifacts>
-					<artifact name="spray-io" type="jar" ext="jar" status="successful" details="" size="142429" time="514" location="/home/gojira/.ivy2/cache/io.spray/spray-io/jars/spray-io-1.2-20130710.jar">
+					<artifact name="spray-io" type="jar" ext="jar" status="no" details="" size="142429" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-io/jars/spray-io-1.2-20130710.jar">
 						<origin-location is-local="false" location="http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.spray" name="spray-util">
-			<revision name="1.2-20130710" status="release" pubdate="20130709201332" resolver="spray repo" artresolver="spray repo" homepage="http://spray.io" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
+			<revision name="1.2-20130710" status="release" pubdate="20130709201332" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="13">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2284" time="450" location="/home/gojira/.ivy2/cache/io.spray/spray-util/ivy-1.2-20130710.xml" searched="true" original-local-location="/home/gojira/.ivy2/cache/io.spray/spray-util/ivy-1.2-20130710.xml.original" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom"/>
+				<metadata-artifact status="no" details="" size="3115" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-util/ivy-1.2-20130710.xml" searched="false" origin-is-local="false" origin-location="http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom"/>
 				<caller organisation="io.spray" name="spray-can" conf="default, compile, runtime, master" rev="1.2-20130710" rev-constraint-default="1.2-20130710" rev-constraint-dynamic="1.2-20130710" callerrev="1.2-20130710"/>
 				<caller organisation="io.spray" name="spray-io" conf="compile, runtime" rev="1.2-20130710" rev-constraint-default="1.2-20130710" rev-constraint-dynamic="1.2-20130710" callerrev="1.2-20130710"/>
 				<artifacts>
-					<artifact name="spray-util" type="jar" ext="jar" status="successful" details="" size="110780" time="521" location="/home/gojira/.ivy2/cache/io.spray/spray-util/jars/spray-util-1.2-20130710.jar">
+					<artifact name="spray-util" type="jar" ext="jar" status="no" details="" size="110780" time="0" location="/home/gojira/.ivy2/cache/io.spray/spray-util/jars/spray-util-1.2-20130710.jar">
 						<origin-location is-local="false" location="http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar"/>
 					</artifact>
 				</artifacts>

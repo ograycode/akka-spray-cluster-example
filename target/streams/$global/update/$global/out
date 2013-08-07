@@ -1,6 +1,6 @@
 [0m[[0minfo[0m] [0mUpdating {file:/home/gojira/git/akka-cluster-example/}default-415dbd...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: my-project#my-project_2.10;1.0[0m
-[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, atmos-dev, atmos-console, atmos-trace-compile, atmos-weave, atmos-sigar][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
 [0m[[0mdebug[0m] [0m	refresh = false[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
@@ -233,24 +233,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-can;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-can;1.2-20130710 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-can/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-can;1.2-20130710!spray-can.pom(pom.original) (476ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-can/1.2-20130710/jars/spray-can.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-can;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-can;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-can;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-can;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -258,24 +243,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-io;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-io;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-io/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-io;1.2-20130710!spray-io.pom(pom.original) (452ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-io/1.2-20130710/jars/spray-io.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-io;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-io;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-io;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-io;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -288,24 +258,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-util;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-util;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-util/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-util;1.2-20130710!spray-util.pom(pom.original) (450ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-util/1.2-20130710/jars/spray-util.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-util;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-util;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-util;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-util;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -340,24 +295,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-http;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-http;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-http/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-http;1.2-20130710!spray-http.pom(pom.original) (456ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-http/1.2-20130710/jars/spray-http.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-http;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-http;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-http;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-http;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1871,16 +1811,790 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'atmos-dev'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [atmos-dev][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-dev;1.2.0 [atmos-dev->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#atmos-dev;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#atmos-dev;1.2.0 {atmos-dev=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-dev/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#atmos-dev;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#atmos-dev;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-dev;1.2.0!atmos-dev.pom(pom.original) (251ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-dev/1.2.0/jars/atmos-dev.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#atmos-dev;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-dev;1.2.0 [atmos-dev->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-dev;1.2.0 [atmos-dev->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-dev;1.2.0 [atmos-dev->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'atmos-console'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [atmos-console][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.console#console-solo;1.2.0 [atmos-console->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.console#console-solo;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.console#console-solo;1.2.0 {atmos-console=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.console/console-solo/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.console#console-solo;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.console#console-solo;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.console#console-solo;1.2.0!console-solo.pom(pom.original) (239ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.console/console-solo/1.2.0/jars/console-solo.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.console#console-solo;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.console#console-solo;1.2.0 [atmos-console->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.console#console-solo;1.2.0 [atmos-console->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.console#console-solo;1.2.0 [atmos-console->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'atmos-trace-compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [atmos-trace-compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.scala-lang#scala-library;2.10.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.scala-lang#scala-library;2.10.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.scala-lang#scala-library;2.10.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.scala-lang#scala-library;2.10.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-contrib_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-contrib_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-contrib_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->com.typesafe#config;1.0.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->com.typesafe#config;1.0.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->io.netty#netty;3.6.6.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->io.netty#netty;3.6.6.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-cluster_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-cluster_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->com.typesafe#config;1.0.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.10;2.2.0->com.typesafe#config;1.0.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->io.netty#netty;3.6.6.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->io.netty#netty;3.6.6.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.10;2.2.0->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-cluster_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->com.typesafe.akka#akka-cluster_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-cluster_2.10;2.2.0->net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-contrib_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-contrib_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-testkit_2.10;2.2.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-testkit_2.10;2.2.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-testkit_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-testkit_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.akka#akka-testkit_2.10;2.2.0 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-util;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-util;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-util;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-util;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-http;1.2-20130710->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-util;1.2-20130710 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-util;1.2-20130710 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 [atmos-trace-compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 {atmos-trace-compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/trace-akka-2.2.0_2.10/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0!trace-akka-2.2.0_2.10.pom(pom.original) (247ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/trace-akka-2.2.0_2.10/1.2.0/jars/trace-akka-2.2.0_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 [atmos-trace-compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 [atmos-trace-compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#trace-scala-2.10.2;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#trace-scala-2.10.2;1.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/trace-scala-2.10.2/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#trace-scala-2.10.2;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#trace-scala-2.10.2;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#trace-scala-2.10.2;1.2.0!trace-scala-2.10.2.pom(pom.original) (241ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/trace-scala-2.10.2/1.2.0/jars/trace-scala-2.10.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#trace-scala-2.10.2;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->com.typesafe.atmos#atmos-trace_2.10;1.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#atmos-trace_2.10;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#atmos-trace_2.10;1.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-trace_2.10/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#atmos-trace_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#atmos-trace_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-trace_2.10;1.2.0!atmos-trace_2.10.pom(pom.original) (245ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-trace_2.10/1.2.0/jars/atmos-trace_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#atmos-trace_2.10;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->com.typesafe.atmos#atmos-trace_2.10;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->com.typesafe.atmos#atmos-event_2.10;1.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#atmos-event_2.10;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#atmos-event_2.10;1.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-event_2.10/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#atmos-event_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#atmos-event_2.10;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-event_2.10;1.2.0!atmos-event_2.10.pom(pom.original) (247ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-event_2.10/1.2.0/jars/atmos-event_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#atmos-event_2.10;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->com.typesafe.atmos#atmos-event_2.10;1.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving org.aspectj#aspectjrt;1.7.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.aspectj#aspectjrt;1.7.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.aspectj/aspectjrt/1.7.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.aspectj#aspectjrt;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for org.aspectj#aspectjrt;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for org.aspectj#aspectjrt;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for org.aspectj#aspectjrt;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.aspectj#aspectjrt;1.7.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom (1.7.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjrt;1.7.2!aspectjrt.pom(pom.original) (87ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.aspectj/aspectjrt/1.7.2/jars/aspectjrt.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m	found org.aspectj#aspectjrt;1.7.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->com.typesafe.atmos#atmos-trace_2.10;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->com.typesafe.atmos#atmos-trace_2.10;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->com.typesafe.atmos#atmos-event_2.10;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->com.typesafe.atmos#atmos-event_2.10;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.typesafe#config;1.0.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-event_2.10;1.2.0->com.google.protobuf#protobuf-java;2.4.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#atmos-trace_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-scala-2.10.2;1.2.0->org.aspectj#aspectjrt;1.7.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.aspectj#aspectjrt;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-slf4j_2.10;2.2.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.akka/akka-slf4j_2.10/2.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for com.typesafe.akka#akka-slf4j_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.typesafe.akka#akka-slf4j_2.10;2.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom (2.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-slf4j_2.10;2.2.0!akka-slf4j_2.10.pom(pom.original) (84ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.akka/akka-slf4j_2.10/2.2.0/bundles/akka-slf4j_2.10.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.0 in public[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.slf4j#slf4j-api;1.7.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving org.slf4j#slf4j-api;1.7.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#slf4j-api;1.7.2[0m
+[0m[[0mdebug[0m] [0m	found org.slf4j#slf4j-api;1.7.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.slf4j#slf4j-api;1.7.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.slf4j#slf4j-api;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.0->org.slf4j#slf4j-api;1.7.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving org.fusesource#sigar;1.6.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource#sigar;1.6.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.fusesource/sigar/1.6.4/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.fusesource#sigar;1.6.4[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom (1.6.4)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.fusesource#sigar;1.6.4!sigar.pom(pom.original) (84ms)[0m
+[0m[[0minfo[0m] [0mResolving org.fusesource#fusesource-pom;1.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource#fusesource-pom;1.5 {}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.fusesource/fusesource-pom/1.5/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.fusesource#fusesource-pom;1.5[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom (1.5)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.fusesource#fusesource-pom;1.5!fusesource-pom.pom(pom.original) (107ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.fusesource/fusesource-pom/1.5/jars/fusesource-pom.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/org/fusesource/fusesource-pom/1.5/fusesource-pom-1.5.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.fusesource/sigar/1.6.4/jars/sigar.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m	found org.fusesource#sigar;1.6.4 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0minfo[0m] [0mResolving log4j#log4j;1.2.15 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: log4j#log4j;1.2.15 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/log4j/log4j/1.2.15/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for log4j#log4j;1.2.15[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom (1.2.15)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] log4j#log4j;1.2.15!log4j.pom(pom.original) (105ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/log4j/log4j/1.2.15/jars/log4j.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m	found log4j#log4j;1.2.15 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javax.mail#mail;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javax.jms#jms;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.sun.jdmk#jmxtools;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.sun.jmx#jmxri;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.fusesource#sigar;1.6.4->log4j#log4j;1.2.15 [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javax.mail#mail;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: javax.jms#jms;1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.sun.jdmk#jmxtools;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: com.sun.jmx#jmxri;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.atmos#trace-scala-2.10.2;1.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.scala-lang#scala-library;2.10.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.aspectj#aspectjrt;1.7.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.aspectj#aspectjrt;1.7.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-actor_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-remote_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->com.typesafe.akka#akka-slf4j_2.10;2.2.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0->org.fusesource#sigar;1.6.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0 [atmos-trace-compile->master][0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'atmos-weave'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [atmos-weave][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.aspectj#aspectjweaver;1.7.2 [atmos-weave->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.aspectj#aspectjweaver;1.7.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.aspectj#aspectjweaver;1.7.2 {atmos-weave=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.aspectj/aspectjweaver/1.7.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.aspectj#aspectjweaver;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for org.aspectj#aspectjweaver;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	spray repo: no ivy file found for org.aspectj#aspectjweaver;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Releases: no ivy file found for org.aspectj#aspectjweaver;1.7.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.aspectj#aspectjweaver;1.7.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom (1.7.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjweaver;1.7.2!aspectjweaver.pom(pom.original) (88ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.aspectj/aspectjweaver/1.7.2/jars/aspectjweaver.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://nightlies.spray.io/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m	found org.aspectj#aspectjweaver;1.7.2 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.aspectj#aspectjweaver;1.7.2 [atmos-weave->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.aspectj#aspectjweaver;1.7.2 [atmos-weave->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->org.aspectj#aspectjweaver;1.7.2 [atmos-weave->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'atmos-sigar'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [atmos-sigar][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-sigar-libs;1.2.0 [atmos-sigar->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.atmos#atmos-sigar-libs;1.2.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.atmos#atmos-sigar-libs;1.2.0 {atmos-sigar=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-sigar-libs/1.2.0/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.typesafe.atmos#atmos-sigar-libs;1.2.0[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: found md file for com.typesafe.atmos#atmos-sigar-libs;1.2.0[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom (1.2.0)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-sigar-libs;1.2.0!atmos-sigar-libs.pom(pom.original) (257ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/com.typesafe.atmos/atmos-sigar-libs/1.2.0/jars/atmos-sigar-libs.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.atmos#atmos-sigar-libs;1.2.0 in Typesafe Repository[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-sigar-libs;1.2.0 [atmos-sigar->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-sigar-libs;1.2.0 [atmos-sigar->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->com.typesafe.atmos#atmos-sigar-libs;1.2.0 [atmos-sigar->master][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/my-project/my-project_2.10/1.0/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-contrib_2.10;2.2.0!akka-contrib_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.10;2.2.0!akka-testkit_2.10.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-can;1.2-20130710!spray-can.jar (1529ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-can;1.2-20130710!spray-can.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.10;2.2.0!akka-remote_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-cluster_2.10;2.2.0!akka-cluster_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.2.0!akka-actor_2.10.jar[0m
@@ -1889,30 +2603,94 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.0.2!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0!scalabuff-runtime_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-io;1.2-20130710!spray-io.jar (514ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-http;1.2-20130710!spray-http.jar (876ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-util;1.2-20130710!spray-util.jar (521ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-io;1.2-20130710!spray-io.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-http;1.2-20130710!spray-http.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-util;1.2-20130710!spray-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-scala_2.10;1.1.5!parboiled-scala_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.5!parboiled-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-actors;2.10.0!scala-actors.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5509ms :: artifacts dl 3485ms[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-dev/1.2.0/atmos-dev-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-dev;1.2.0!atmos-dev.jar (1444ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/console/console-solo/1.2.0/console-solo-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.console#console-solo;1.2.0!console-solo.jar (2754ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-akka-2.2.0_2.10/1.2.0/trace-akka-2.2.0_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#trace-akka-2.2.0_2.10;1.2.0!trace-akka-2.2.0_2.10.jar (209ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/trace-scala-2.10.2/1.2.0/trace-scala-2.10.2-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#trace-scala-2.10.2;1.2.0!trace-scala-2.10.2.jar (178ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjrt/1.7.2/aspectjrt-1.7.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjrt;1.7.2!aspectjrt.jar (175ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.akka#akka-slf4j_2.10;2.2.0!akka-slf4j_2.10.jar(bundle) (88ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/fusesource/sigar/1.6.4/sigar-1.6.4.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.fusesource#sigar;1.6.4!sigar.jar (214ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-trace_2.10/1.2.0/atmos-trace_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-trace_2.10;1.2.0!atmos-trace_2.10.jar (199ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-event_2.10/1.2.0/atmos-event_2.10-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-event_2.10;1.2.0!atmos-event_2.10.jar (373ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/org.slf4j/slf4j-api/1.7.2/jars/slf4j-api.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.2!slf4j-api.jar (293ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/log4j/log4j/1.2.15/log4j-1.2.15.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] log4j#log4j;1.2.15!log4j.jar (207ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.7.2/aspectjweaver-1.7.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.aspectj#aspectjweaver;1.7.2!aspectjweaver.jar (617ms)[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar ...[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar[0m
+[0m[[0mdebug[0m] [0m	Typesafe Repository: downloading http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.typesafe.com/typesafe/releases/com/typesafe/atmos/atmos-sigar-libs/1.2.0/atmos-sigar-libs-1.2.0.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.atmos#atmos-sigar-libs;1.2.0!atmos-sigar-libs.jar (828ms)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 9638ms :: artifacts dl 7650ms[0m
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 compile produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 runtime produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 test produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-test.xml[0m
@@ -1925,5 +2703,10 @@
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 sources produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-sources.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 docs produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 pom produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5509ms resolve - 3485ms download)[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 atmos-dev produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-atmos-dev.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 atmos-console produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-atmos-console.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 atmos-trace-compile produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-atmos-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 atmos-weave produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-atmos-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 atmos-sigar produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-atmos-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (9638ms resolve - 7650ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
