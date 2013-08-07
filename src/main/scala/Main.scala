@@ -3,7 +3,12 @@ package main
 //#imports
 import language.postfixOps
 import scala.concurrent.duration._
-import akka.actor._
+import akka.actor.Actor
+import akka.actor.ActorRef
+import akka.actor.ActorSystem
+import akka.actor.Props
+import akka.actor.RootActorPath
+import akka.actor.Terminated
 import akka.cluster.Cluster
 import akka.cluster.ClusterEvent.CurrentClusterState
 import akka.cluster.ClusterEvent.MemberUp
@@ -29,7 +34,6 @@ case class TransformationJob(text: String)
 case class TransformationResult(text: String)
 case class JobFailed(reason: String, job: TransformationJob)
 case object BackendRegistration
-case class KillSelf
 //#messages
 
 object TransformationFrontend {
@@ -64,11 +68,7 @@ class TransformationFrontend extends Actor with SprayActorLogging {
     } else {
       currentWorker = currentWorker + 1
     }
-    if (backends.size > 0) {
-      backends(currentWorker)
-    } else {
-      createBackendActor
-    }
+    backends(currentWorker)
   }
 
   def index(s: Int) = HttpResponse(
@@ -104,27 +104,15 @@ class TransformationFrontend extends Actor with SprayActorLogging {
     )
   )
 
-  def createBackendActor = {
-    context.actorOf(Props[TransformationBackend], name = "backend")
-  }
+
+  context.actorOf(Props[TransformationBackend], name = "backend")
 
   def receive = {
 
     case _: Http.Connected => sender ! Http.Register(self)
 
-    case HttpRequest(GET, Uri.Path("/kill"), _, _, _) =>
-      nextWorker ! new KillSelf
-
-    case HttpRequest(GET, Uri.Path("/create"), _, _, _) =>
-      createBackendActor
-
     case HttpRequest(GET, Uri.Path("/"), _, _, _) =>
-      if (backends.isEmpty) {
-        sender ! noWorkers
-      } else {
-        sender ! index(backends.size)
-      }
-
+      sender ! index(backends.size)
     case HttpRequest(GET, Uri.Path("/work"), _, _, _) =>
       jobCounter += 1
       
@@ -137,7 +125,6 @@ class TransformationFrontend extends Actor with SprayActorLogging {
       backends = backends :+ sender
 
     case Terminated(a) =>
-      log.info("terminating " + a.toString)
       backends = backends.filterNot(_ == a)
   }
 }
@@ -153,10 +140,7 @@ object TransformationBackend {
         withFallback(ConfigFactory.load())
 
     val system = ActorSystem("ClusterSystem", config)
-    val range = 1 to 10
-    for (i <- range) {
-      system.actorOf(Props[TransformationBackend], name = "backend-" + i)
-    }
+    system.actorOf(Props[TransformationBackend], name = "backend")
   }
 }
 
@@ -179,7 +163,6 @@ class TransformationBackend extends Actor {
     case state: CurrentClusterState =>
       state.members.filter(_.status == MemberStatus.Up) foreach register
     case MemberUp(m) => register(m)
-    case KillSelf => self ! PoisonPill
   }
 
   def register(member: Member): Unit =
