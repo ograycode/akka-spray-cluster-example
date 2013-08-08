@@ -2,14 +2,31 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(C:\Users\jason.a.gray\git\akka-spray-cluster-example\src\main\scala\Main.scala)[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mModified external sources: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(C:\Users\jason.a.gray\git\akka-spray-cluster-example\src\main\scala\Main.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\jason.a.gray\git\akka-spray-cluster-example\src\main\scala\Main.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\scala-2.10\classes...[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler b8ab59, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\scala-2.10\classes[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_21\jre\classes;C:\Users\jason.a.gray\.sbt\boot\scala-2.10.1\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\scala-2.10\classes;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe.akka\akka-contrib_2.10\jars\akka-contrib_2.10-2.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe.akka\akka-remote_2.10\bundles\akka-remote_2.10-2.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe\config\bundles\config-1.0.2.jar;C:\Users\jason.a.gray\.ivy2\cache\io.netty\netty\bundles\netty-3.6.6.Final.jar;C:\Users\jason.a.gray\.ivy2\cache\com.google.protobuf\protobuf-java\jars\protobuf-java-2.4.1.jar;C:\Users\jason.a.gray\.ivy2\cache\org.uncommons.maths\uncommons-maths\jars\uncommons-maths-1.2.2a.jar;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe.akka\akka-cluster_2.10\bundles\akka-cluster_2.10-2.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\net.sandrogrzicic\scalabuff-runtime_2.10\jars\scalabuff-runtime_2.10-1.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\com.typesafe.akka\akka-testkit_2.10\bundles\akka-testkit_2.10-2.2.0.jar;C:\Users\jason.a.gray\.ivy2\cache\io.spray\spray-can\jars\spray-can-1.2-20130710.jar;C:\Users\jason.a.gray\.ivy2\cache\io.spray\spray-io\jars\spray-io-1.2-20130710.jar;C:\Users\jason.a.gray\.ivy2\cache\io.spray\spray-util\jars\spray-util-1.2-20130710.jar;C:\Users\jason.a.gray\.ivy2\cache\io.spray\spray-http\jars\spray-http-1.2-20130710.jar;C:\Users\jason.a.gray\.ivy2\cache\org.parboiled\parboiled-scala_2.10\bundles\parboiled-scala_2.10-1.1.5.jar;C:\Users\jason.a.gray\.ivy2\cache\org.parboiled\parboiled-core\bundles\parboiled-core-1.1.5.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 5.177615949 s[0m
+[0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m
+[0m[[0mdebug[0m] [0m	[0m
+[0m[[0mdebug[0m] [0mStep 2 invalidated sources:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m

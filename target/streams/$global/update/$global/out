@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/gojira/git/akka-cluster-example/}default-415dbd...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/jason.a.gray/git/akka-spray-cluster-example/}default-145873...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: my-project#my-project_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -233,24 +233,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-can;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-can;1.2-20130710 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-can/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-can;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-can;1.2-20130710!spray-can.pom(pom.original) (476ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-can/1.2-20130710/jars/spray-can.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-can;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-can;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-can;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-can;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies my-project#my-project_2.10;1.0->io.spray#spray-can;1.2-20130710 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -258,24 +243,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-io;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-io;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-io/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-io;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-io;1.2-20130710!spray-io.pom(pom.original) (452ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-io/1.2-20130710/jars/spray-io.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-io;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-io;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-io;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-io;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-io;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -288,24 +258,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-util;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-util;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-util/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-util;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-util;1.2-20130710!spray-util.pom(pom.original) (450ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-util/1.2-20130710/jars/spray-util.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-util;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-util;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-util;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-util;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-io;1.2-20130710->io.spray#spray-util;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -340,24 +295,9 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-http;1.2-20130710 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-http;1.2-20130710 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-http/1.2-20130710/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	Typesafe Repository: no ivy file found for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: found md file for io.spray#spray-http;1.2-20130710[0m
-[0m[[0mdebug[0m] [0m		=> http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom (1.2-20130710)[0m
-[0m[[0mdebug[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#spray-http;1.2-20130710!spray-http.pom(pom.original) (456ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/gojira/.ivy2/local/io.spray/spray-http/1.2-20130710/jars/spray-http.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	found io.spray#spray-http;1.2-20130710 in spray repo[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-http;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-http;1.2-20130710[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-http;1.2-20130710 in sbt-chain[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-can;1.2-20130710->io.spray#spray-http;1.2-20130710 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -1871,16 +1811,11 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for my-project#my-project_2.10;1.0 [pom][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/my-project/my-project_2.10/1.0/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\my-project\my-project_2.10\1.0\resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-contrib_2.10;2.2.0!akka-contrib_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.10;2.2.0!akka-testkit_2.10.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-can/1.2-20130710/spray-can-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-can;1.2-20130710!spray-can.jar (1529ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-can;1.2-20130710!spray-can.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.10;2.2.0!akka-remote_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-cluster_2.10;2.2.0!akka-cluster_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.2.0!akka-actor_2.10.jar[0m
@@ -1889,41 +1824,26 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.0.2!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.sandrogrzicic#scalabuff-runtime_2.10;1.2.0!scalabuff-runtime_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-io/1.2-20130710/spray-io-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-io;1.2-20130710!spray-io.jar (514ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-http/1.2-20130710/spray-http-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-http;1.2-20130710!spray-http.jar (876ms)[0m
-[0m[[0mdebug[0m] [0m		tried http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar ...[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0mdebug[0m] [0m	spray repo: downloading http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://nightlies.spray.io/io/spray/spray-util/1.2-20130710/spray-util-1.2-20130710.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#spray-util;1.2-20130710!spray-util.jar (521ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-io;1.2-20130710!spray-io.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-http;1.2-20130710!spray-http.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-util;1.2-20130710!spray-util.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-scala_2.10;1.1.5!parboiled-scala_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.5!parboiled-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;1.9.1!scalatest_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-actors;2.10.0!scala-actors.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5509ms :: artifacts dl 3485ms[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 compile produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 runtime produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 test produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 provided produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 optional produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 compile-internal produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 runtime-internal produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 test-internal produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 plugin produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 sources produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 docs produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 pom produced in /home/gojira/git/akka-cluster-example/target/resolution-cache/reports/my-project-my-project_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5509ms resolve - 3485ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 400ms :: artifacts dl 20ms[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 compile produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 runtime produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 test produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 provided produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 optional produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 compile-internal produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 runtime-internal produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 test-internal produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 plugin produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 sources produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 docs produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for my-project#my-project_2.10;1.0 pom produced in C:\Users\jason.a.gray\git\akka-spray-cluster-example\target\resolution-cache\reports\my-project-my-project_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (400ms resolve - 20ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
