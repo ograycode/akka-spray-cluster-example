@@ -54,6 +54,7 @@ object TransformationFrontend {
 
 //#frontend
 class TransformationFrontend extends Actor with SprayActorLogging {
+  import context.dispatcher
 
   var backends = IndexedSeq.empty[ActorRef]
   var jobCounter = 0
@@ -115,10 +116,12 @@ class TransformationFrontend extends Actor with SprayActorLogging {
       sender ! index(backends.size)
     case HttpRequest(GET, Uri.Path("/work"), _, _, _) =>
       jobCounter += 1
-      
-      val future = nextWorker ? new TransformationJob(jobCounter + "-job")
-      val result = Await.result(future, duration).asInstanceOf[TransformationJob]
-      sender ! jobResponse(result.text)
+
+      val future: Future[TransformationJob] = (nextWorker ? new TransformationJob(jobCounter + "-job")).mapTo[TransformationJob]
+      val originalSender = sender
+      future onSuccess {
+        case TransformationJob(text) => originalSender ! jobResponse(text)
+      }
 
     case BackendRegistration if !backends.contains(sender) =>
       context watch sender
