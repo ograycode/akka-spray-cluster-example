@@ -22,4 +22,4 @@
 [0m[[0mdebug[0m] [0m	/home/gojira/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.5.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
 [0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread ClusterSystem-akka.actor.default-dispatcher-2 to exit[0m
+[0m[[0mdebug[0m] [0mWaiting for thread New I/O worker #4 to exit[0m

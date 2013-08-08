@@ -15,7 +15,7 @@
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/gojira/git/akka-cluster-example/src/main/scala/Main.scala)[0m
 [0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/gojira/git/akka-cluster-example/target/scala-2.10/classes...[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 31ec634b, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 454055ac, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-d[0m
 [0m[[0mdebug[0m] [0m	/home/gojira/git/akka-cluster-example/target/scala-2.10/classes[0m
@@ -23,10 +23,10 @@
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/gojira/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/gojira/git/akka-cluster-example/target/scala-2.10/classes:/home/gojira/.ivy2/cache/com.typesafe.akka/akka-contrib_2.10/jars/akka-contrib_2.10-2.2.0.jar:/home/gojira/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/bundles/akka-remote_2.10-2.2.0.jar:/home/gojira/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar:/home/gojira/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/home/gojira/.ivy2/cache/io.netty/netty/bundles/netty-3.6.6.Final.jar:/home/gojira/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar:/home/gojira/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar:/home/gojira/.ivy2/cache/com.typesafe.akka/akka-cluster_2.10/bundles/akka-cluster_2.10-2.2.0.jar:/home/gojira/.ivy2/cache/net.sandrogrzicic/scalabuff-runtime_2.10/jars/scalabuff-runtime_2.10-1.2.0.jar:/home/gojira/.ivy2/cache/com.typesafe.akka/akka-testkit_2.10/bundles/akka-testkit_2.10-2.2.0.jar:/home/gojira/.ivy2/cache/io.spray/spray-can/jars/spray-can-1.2-20130710.jar:/home/gojira/.ivy2/cache/io.spray/spray-io/jars/spray-io-1.2-20130710.jar:/home/gojira/.ivy2/cache/io.spray/spray-util/jars/spray-util-1.2-20130710.jar:/home/gojira/.ivy2/cache/io.spray/spray-http/jars/spray-http-1.2-20130710.jar:/home/gojira/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.5.jar:/home/gojira/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.5.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 8.608983725 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 8.359201073 s[0m
 [0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
-[0m[[0mdebug[0m] [0m	Set(/home/gojira/git/akka-cluster-example/src/main/scala/Main.scala)[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m
 [0m[[0mdebug[0m] [0m	[0m
 [0m[[0mdebug[0m] [0mStep 2 invalidated sources:[0m
-[0m[[0mdebug[0m] [0m	Set(/home/gojira/git/akka-cluster-example/src/main/scala/Main.scala)[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
